@@ -181,7 +181,7 @@ PRIMARY KEY  (number)
             $create_user    = false;
 
             if ( $this->settings['create_users'] ) {
-                $create_user = ( rand( 1, 100 ) <= 50 ) ? true : false;
+                $create_user = true;
             }
 
             if ( $create_user ) {
